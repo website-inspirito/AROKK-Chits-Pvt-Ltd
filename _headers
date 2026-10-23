@@ -1,0 +1,15 @@
+# Cloudflare Pages response headers
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# Images, fonts and scripts can be cached for a long time
+/assets/*
+  Cache-Control: public, max-age=2592000
+
+# Keep the deployment preview (*.pages.dev) out of search results; only www.arokk.in should be indexed
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex

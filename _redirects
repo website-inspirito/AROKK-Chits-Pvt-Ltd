@@ -1,0 +1,8 @@
+# Cloudflare Pages redirects
+# Old or alternate paths -> clean URLs
+/index          /                301
+/home           /                301
+/gold           /gold-loan       301
+/chit           /chit-fund       301
+/chits          /chit-fund       301
+/micro-finance  /microfinance    301
